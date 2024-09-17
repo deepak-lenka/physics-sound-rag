@@ -6,6 +6,11 @@ This repository contains a Question Answering system for physics topics, particu
 
 https://github.com/deepak-lenka/physics-sound-rag.git
 
+## Demo
+
+https://x.com/iamdeepaklenka/status/1836090773219266858
+
+Here's a quick demonstration of how the system works:
 ## Features
 
 - Web-based interface for asking physics questions
