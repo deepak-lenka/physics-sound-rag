@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound🔈</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Sound🔈</h1>
+    <div id="query-form">
+        <input type="text" id="query-input" placeholder="Enter your physics question">
+        <button id="submit-btn" onclick="sendQuery()">Ask</button>
+    </div>
+    <div id="response"></div>
+
+    <script>
+        async function sendQuery() {
+            const query = document.getElementById('query-input').value;
+            const response = document.getElementById('response');
+            response.innerText = 'Loading...';
+
+            try {
+                const result = await axios.post('/query', { text: query });
+                response.innerText = result.data.response;
+            } catch (error) {
+                response.innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

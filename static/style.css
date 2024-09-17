@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E1E2E;
+    color: #E0E0E0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #00D1FF;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 4px 6px rgba(0, 209, 255, 0.5);
+}
+
+#query-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#query-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #00D1FF;
+    border-radius: 8px;
+    background-color: #29293E;
+    color: #E0E0E0;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#query-input:focus {
+    border-color: #FF6F61;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00D1FF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 209, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #FF6F61;
+    box-shadow: 0 6px 20px rgba(255, 111, 97, 0.5);
+}
+
+#response {
+    background-color: #29293E;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #E0E0E0;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 209, 255, 0.2);
+}
