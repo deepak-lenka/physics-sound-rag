@@ -1,3 +1,5 @@
+# Assignment Part 1: 
+
 # Physics Sound RAG System
 
 This repository contains a Question Answering system for physics topics, particularly focused on sound. It uses a Retrieval-Augmented Generation (RAG) approach to provide accurate answers based on a curated dataset.
